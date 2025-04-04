@@ -4,9 +4,12 @@ function App(){
 
   const [nome, setNome] = useState('Ronaldo')
 
-  return (
-    <div>
-      <h3>Pizzaria 2D</h3>
+  const Formulario = () => {
+
+    return (
+      <>
+    
+      <h3>Formulário</h3>
 
       <input 
       className="nome"
@@ -16,11 +19,28 @@ function App(){
       <button
       className="botao"
       onClick={()=>{alert(nome)}}>
+        alert('O nome digitado foi ' + nome)
     
      CLIQUE AQUI
      </button>
-    </div>
+       
+     </>
+  
   )
 }
 
+return (
+  <div>
+    <h3>Pizzaria 2D</h3>
+    <p>texto do paragráfo</p>
+    <img src={} />
+
+    <formulario />
+    <formulario />
+    <formulario />
+    <formulario />
+
+  </div>
+)
+}
 export default App
